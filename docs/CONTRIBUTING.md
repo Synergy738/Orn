@@ -4,12 +4,18 @@ Thank you for your interest in contributing to Orn, a modern low-level programmi
 
 This document outlines guidelines to help you contribute effectively. Whether you're reporting bugs, suggesting features, or submitting code, we appreciate your help.
 
+> **AI-Generated Pull Requests Policy**
+>
+> Do **not** submit AI-generated PRs without genuine understanding and manual verification of the changes. PRs that blindly apply AI suggestions, especially those that claim to fix issues, fabricate testing claims, or show no evidence of actually running the compiled output. **Will be closed immediately**.
+>
+> We value quality contributions from people who engage with the codebase. If you use AI as a tool to assist you, that's fine, but **you** must understand, test, and verify every change. "It compiles" is not "it works."
+
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
 - [How to Contribute](#how-to-contribute)
 - [Development Setup](#development-setup)
-- [Style Guide](#style-guide)
+- >[Style Guide](#style-guide)  yet to set
 - [Testing](#testing)
 - [License](#license)
 
