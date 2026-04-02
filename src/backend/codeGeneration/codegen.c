@@ -1,3 +1,19 @@
+/**
+ * @file codegen.c
+ * @brief x86-64 assembly code generation from IR instructions.
+ *
+ * Responsibilities:
+ *   - createCodeGenContext() / freeCodeGenContext()
+ *   - loadOp() / storeOp(): operand ↔ register transfer
+ *   - genBinaryOp(), genUnaryOp(), genCopy(), genCast()
+ *   - genPointerLoad(), genPointerStore(), genDeref(), genAddrof()
+ *   - genMemberLoad(), genMemberStore(), genAllocStruct()
+ *   - genCall(), genParam(), genReturn()
+ *   - genFuncBegin(), genFuncEnd()
+ *   - generateInstruction(): main IR → assembly dispatch
+ *   - generateAssembly(): top-level assembly string builder
+ */
+
 #include "codegen.h"
 #include "emiter.h"
 
