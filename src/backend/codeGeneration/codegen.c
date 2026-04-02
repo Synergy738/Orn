@@ -3,18 +3,12 @@
  * @brief x86-64 assembly code generation from IR instructions.
  *
  * Responsibilities:
- *   - createCodeGenContext() / freeCodeGenContext(): allocate and release the code-gen context
- * (buffers, pools, function info)
- *   - loadOp() / storeOp(): operand ↔ register transfer (move IR values in/out of physical
- * registers)
- *   - genBinaryOp(), genUnaryOp(), genCopy(), genCast(): arithmetic, logic, plain assignment, and
- * type-conversion instructions
- *   - genPointerLoad(), genPointerStore(), genDeref(), genAddrof(): memory indirection and
- * address-of operations
- *   - genMemberLoad(), genMemberStore(), genAllocStruct(): struct field access and stack struct
- * allocation
- *   - genCall(), genParam(), genReturn(): function call ABI — argument marshalling, call emission,
- * and return sequences
+ *   - createCodeGenContext() / freeCodeGenContext(): allocate and release the code-gen context(buffers, pools, function info)
+ *   - loadOp() / storeOp(): operand ↔ register transfer (move IR values in/out of physical registers)
+ *   - genBinaryOp(), genUnaryOp(), genCopy(), genCast(): arithmetic, logic, plain assignment, and type-conversion instructions
+ *   - genPointerLoad(), genPointerStore(), genDeref(), genAddrof(): memory indirection and address-of operations
+ *   - genMemberLoad(), genMemberStore(), genAllocStruct(): struct field access and stack struct allocation
+ *   - genCall(), genParam(), genReturn(): function call ABI — argument marshalling, call emission, and return sequences
  *   - genFuncBegin(), genFuncEnd(): function prologue and epilogue (stack frame setup and teardown)
  *   - generateInstruction(): main IR → assembly dispatch (routes each IrOpCode to its gen* handler)
  *   - generateAssembly(): top-level assembly string builder
